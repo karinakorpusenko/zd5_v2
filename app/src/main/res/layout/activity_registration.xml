@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nis"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_login"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailEdit"
+            android:backgroundTint="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/aquamarine"
+            android:textColorHighlight="@color/aquamarine"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LoginEdit"
+            android:backgroundTint="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:hint="Login"
+            android:textColor="@color/aquamarine"
+            android:textColorHighlight="@color/aquamarine"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PassEdit"
+            android:backgroundTint="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/aquamarine"
+            android:textColorHighlight="@color/aquamarine"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RepPassEdit"
+            android:backgroundTint="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:hint="Repeat password"
+            android:inputType="textPassword"
+            android:textColor="@color/aquamarine"
+            android:textColorHighlight="@color/aquamarine"
+            android:textColorHint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose role:"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/RoleSpin"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Roles" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RegisterBut"
+            android:background="@drawable/bt"
+            android:backgroundTint="@color/pink"
+            android:onClick="Register"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Register"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

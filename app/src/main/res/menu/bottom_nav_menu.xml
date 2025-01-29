@@ -1,0 +1,11 @@
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_addition"
+        android:icon="@drawable/icon_addition"
+        android:title="Addition" />
+    <item
+        android:id="@+id/nav_removing"
+        android:icon="@drawable/icon_removing"
+        android:title="Removing" />
+</menu>
